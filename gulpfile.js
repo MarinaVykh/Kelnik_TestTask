@@ -38,7 +38,7 @@ gulp.task('sass', function () {
     .pipe(sourcemaps.init())                                // инициируем карту кода
     .pipe(sass())                                           // компилируем SASS
     .pipe(postcss([                                         // делаем постпроцессинг
-      autoprefixer({browsers: ['last 2 version']}),     // автопрефиксирование
+      autoprefixer({browsers: ['last 4 version']}),     // автопрефиксирование
       mqpacker({sort: true}),                           // объединение медиавыражений
     ]))
     .pipe(sourcemaps.write('/'))                            // записываем карту кода как отдельный файл (путь из константы)
@@ -142,20 +142,11 @@ gulp.task('js', function () {
   return gulp.src([
     // список обрабатываемых файлов
     //dirs.source + '/js/map.js',
-    dirs.source + '/js/javascript.js',
+    dirs.source + '/js/main.js',
   ])
     .pipe(plumber({errorHandler: onError}))
     .pipe(concat('javascript.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest(dirs.build + '/js'));
-});
-
-gulp.task('js:copy:map', function () {
-  return gulp.src([
-    // список обрабатываемых файлов
-    dirs.source + '/js/map.js',
-  ])
-    .pipe(rename('map.min.js'))
     .pipe(gulp.dest(dirs.build + '/js'));
 });
 
@@ -216,7 +207,7 @@ gulp.task('css:fonts:woff2', function (callback) {
 gulp.task('build', gulp.series(                             // последовательно:
   'clean',                                                  // последовательно: очистку папки сборки
   'svgstore',
-  gulp.parallel('sass', 'img', 'js', 'js:copy:map', 'js:copy:picturefill', 'copy:fonts'),
+  gulp.parallel('sass', 'img', 'js', 'js:copy:picturefill', 'copy:fonts'),
   'html'                                                    // последовательно: сборку разметки
 ));
 
@@ -230,7 +221,7 @@ gulp.task('serve', gulp.series('build', function () {
     },
     port: 3000,                                             // порт, на котором будет работать сервер
     startPath: '/index.html',                               // файл, который буде открываться в браузере при старте сервера
-    open: false                                             // возможно, каждый раз стартовать сервер не нужно...
+    //open: false                                             // возможно, каждый раз стартовать сервер не нужно...
   });
 
   gulp.watch(                                               // следим за HTML
