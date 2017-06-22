@@ -30,6 +30,16 @@
   border-bottom: 1px dashed #ff5e42;
 }
 
+.page-header__sorting-item--bottom::after {
+  content: "\25bc";
+  color: #000;
+}
+
+.page-header__sorting-item--top::after {
+  content: "\25b2";
+  color: #000;
+}
+
 @media ($tablet-width) {
 
   .page-header {

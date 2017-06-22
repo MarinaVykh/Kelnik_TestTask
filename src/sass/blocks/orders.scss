@@ -32,6 +32,24 @@
   }
 }
 
+.orders__item--special {
+  position: relative;
+}
+
+.orders__item--special::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 35px;
+  height: 55px;
+  background-image: url("../img/order-item-special.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
 .orders__item-picture {
   margin-bottom: 10px;
 }
