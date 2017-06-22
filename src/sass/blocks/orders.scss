@@ -1,0 +1,46 @@
+.orders {
+
+}
+
+.orders__item-wrapper-for-3items {
+  @include clearfix;
+
+  margin: 0 auto;
+  width: 700px;
+}
+
+.orders__item {
+  float: left;
+}
+
+.orders__item {
+  width: 220px;
+  height: 430px;
+  margin-right: 20px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.orders__item-picture {
+
+}
+
+.orders__item-name {
+  font-size: 24px;
+  color: #2a2a2a;
+
+}
+
+.orders__item-info {
+  font-size: 13px;
+  color: #2a2a2a;
+}
+
+.orders__item-button-status {
+
+}
