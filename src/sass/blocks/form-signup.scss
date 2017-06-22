@@ -1,0 +1,110 @@
+.form-signup {
+  width: 1024px;
+  margin: 0 auto;
+  padding-left: 168px;
+  font-family: "Prototypster", sans-serif;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.form-signup__email {
+  margin: 0 0 20px 0;
+  padding: 0;
+  border: none;
+}
+
+.form-signup__email-name {
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.form-signup__email-input {
+  min-width: 212px;
+  height: 36px;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  border: none;
+  border-radius: 6px;
+  outline: 0;
+
+}
+
+.form-signup__checkbox {
+  margin: 0 0 20px 78px;
+  padding: 0;
+  border: none;
+}
+
+.form-signup__checkbox-input {
+  display: none;
+}
+
+.form-signup__checkbox-name {
+  font-size: 19px;
+
+  display: block;
+  position: relative;
+  width: 200px;
+  left: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -62px;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    border: solid 2px gray;
+
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -52px;
+    width: 18px;
+    height: 8px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: scale(0);
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media ($tablet-width) {
+
+  .form-signup {
+    width: 768px;
+    padding-left: 0;
+  }
+}
+
+@media ($mobile-width) {
+
+  .form-signup {
+    width: 320px;
+    padding-left: 0;
+  }
+}

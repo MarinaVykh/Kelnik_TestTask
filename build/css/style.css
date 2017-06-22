@@ -418,6 +418,7 @@ h1, h2 {
   font-size: 48px; }
 
 .page-header__sorting {
+  margin-bottom: 40px;
   font-size: 14px;
   color: #2a2a2a; }
 
@@ -427,35 +428,201 @@ h1, h2 {
 
 .page-main {
   width: 1024px;
-  margin: auto; }
+  margin: 0 auto; }
+
+.page-main__button-scroll-up {
+  margin-bottom: 45px;
+  text-align: center; }
 
 .orders__item-wrapper-for-3items {
-  margin: 0 auto;
-  width: 700px; }
+  margin: 0 auto 40px;
+  width: 730px; }
   .orders__item-wrapper-for-3items::after {
     content: "";
     display: table;
     clear: both; }
+  .orders__item-wrapper-for-3items:last-child {
+    margin-bottom: 60px; }
 
 .orders__item {
-  float: left; }
-
-.orders__item {
-  width: 220px;
-  height: 430px;
+  float: left;
+  width: 230px;
   margin-right: 20px;
   padding: 8px;
   background-color: #fff;
-  border-radius: 10px; }
+  border: 4px solid transparent;
+  border-radius: 10px;
+  transition: all 0.4s ease-out; }
   .orders__item:last-child {
     margin-right: 0; }
+  .orders__item:hover {
+    border-color: #ff5e42; }
+    .orders__item:hover .orders__item-button-status {
+      color: #ff5e42; }
+
+.orders__item-picture {
+  margin-bottom: 10px; }
 
 .orders__item-name {
+  padding: 8px;
   font-size: 24px;
+  letter-spacing: 0.01em;
   color: #2a2a2a; }
 
 .orders__item-info {
+  min-height: 135px;
+  padding: 8px;
   font-size: 13px;
   color: #2a2a2a; }
+
+.orders__item-info-status {
+  margin-bottom: 20px; }
+
+.orders__item-button-status {
+  padding: 0 0 5px 8px;
+  font-family: "Prototypster";
+  font-size: 24px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #b8b8b8;
+  cursor: pointer;
+  transition: all 0.4s ease-out; }
+
+.button {
+  padding: 0;
+  font-family: "Prototypster", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: #ff5e42;
+  border: none;
+  background: 0 0;
+  text-decoration: underline;
+  cursor: pointer; }
+
+.button--scroll-up {
+  font-size: 36px; }
+
+.button--signup {
+  margin-left: 78px;
+  font-size: 28px; }
+
+.page-footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-image: url("../img/bg-footer.png"); }
+
+.form-signup {
+  width: 1024px;
+  margin: 0 auto;
+  padding-left: 168px;
+  font-family: "Prototypster", sans-serif;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #fff; }
+
+.form-signup__email {
+  margin: 0 0 20px 0;
+  padding: 0;
+  border: none; }
+
+.form-signup__email-name {
+  margin-right: 20px;
+  font-size: 14px; }
+
+.form-signup__email-input {
+  min-width: 212px;
+  height: 36px;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  border: none;
+  border-radius: 6px;
+  outline: 0; }
+
+.form-signup__checkbox {
+  margin: 0 0 20px 78px;
+  padding: 0;
+  border: none; }
+
+.form-signup__checkbox-input {
+  display: none; }
+
+.form-signup__checkbox-name {
+  font-size: 19px;
+  display: block;
+  position: relative;
+  width: 200px;
+  left: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black; }
+  .form-signup__checkbox-name::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -62px;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    border: solid 2px gray; }
+  .form-signup__checkbox-name::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -52px;
+    width: 18px;
+    height: 8px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    -ms-transform: scale(0);
+        transform: scale(0); }
+  @media (max-width: 1024px) {
+  .page-header {
+    width: 768px; }
+  .page-main {
+    width: 768px; }
+  .orders__item-wrapper-for-3items {
+    margin: 0 auto 20px;
+    width: 620px; }
+  .orders__item {
+    width: 200px;
+    margin-right: 10px;
+    padding: 3px;
+    border: 2px solid transparent;
+    border-radius: 5px; }
+  .orders__item-name {
+    font-size: 20px; }
+  .orders__item-button-status {
+    font-size: 20px; }
+  .page-footer {
+    padding: 25px 10px;
+    text-align: center; }
+  .form-signup {
+    width: 768px;
+    padding-left: 0; } }
+  @media (max-width: 767px) {
+  .page-header {
+    width: 320px; }
+  .page-main {
+    width: 320px; }
+  .orders__item-wrapper-for-3items {
+    float: none;
+    width: 300px;
+    margin: 0 auto; }
+  .orders__item {
+    width: 300px;
+    margin-right: 0;
+    margin-bottom: 25px;
+    padding: 47px;
+    text-align: center;
+    border-radius: 10px; }
+  .orders__item-button-status {
+    padding: 0; }
+  .form-signup {
+    width: 320px;
+    padding-left: 0; } }
 
 /*# sourceMappingURL=style.css.map */

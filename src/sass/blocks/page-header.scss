@@ -20,6 +20,7 @@
 }
 
 .page-header__sorting {
+  margin-bottom: 40px;
   font-size: 14px;
   color: #2a2a2a;
 }
@@ -27,4 +28,18 @@
 .page-header__sorting-item {
   color: #ff5e42;
   border-bottom: 1px dashed #ff5e42;
+}
+
+@media ($tablet-width) {
+
+  .page-header {
+    width: 768px;
+  }
+}
+
+@media ($mobile-width) {
+
+  .page-header {
+    width: 320px;
+  }
 }

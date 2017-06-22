@@ -1,0 +1,14 @@
+.page-footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-image: url("../img/bg-footer.png");
+}
+
+@media ($tablet-width) {
+
+  .page-footer {
+    padding: 25px 10px;
+    text-align: center;
+  }
+}
