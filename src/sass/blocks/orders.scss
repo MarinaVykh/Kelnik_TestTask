@@ -55,7 +55,7 @@
 }
 
 .orders__item-name {
-  padding: 8px;
+  padding: 8px 8px 0 8px;
   font-size: 24px;
   letter-spacing: 0.01em;
   color: #2a2a2a;
@@ -64,7 +64,7 @@
 
 .orders__item-info {
   min-height: 135px;
-  padding: 8px;
+  padding: 0 8px 8px 8px;
   font-size: 13px;
   color: #2a2a2a;
 }
