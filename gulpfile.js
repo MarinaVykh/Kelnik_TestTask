@@ -145,7 +145,7 @@ gulp.task('js', function () {
     dirs.source + '/js/main.js',
   ])
     .pipe(plumber({errorHandler: onError}))
-    .pipe(concat('javascript.min.js'))
+    .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest(dirs.build + '/js'));
 });

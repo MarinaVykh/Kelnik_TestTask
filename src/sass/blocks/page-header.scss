@@ -28,6 +28,7 @@
 .page-header__sorting-item {
   color: #ff5e42;
   border-bottom: 1px dashed #ff5e42;
+  cursor: pointer;
 }
 
 .page-header__sorting-item--bottom::after {
