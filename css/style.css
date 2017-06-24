@@ -399,6 +399,9 @@ h1, h2 {
   font-family: "Prototypster";
   text-transform: uppercase; }
 
+header, main, nav, section, article, aside, footer {
+  display: block; }
+
 .page-header {
   width: 1024px;
   margin: 0 auto;
@@ -444,8 +447,8 @@ h1, h2 {
   text-align: center; }
 
 .orders__item-wrapper-for-3items {
-  margin: 0 auto 40px;
-  width: 730px; }
+  display: inline-block;
+  margin: 0 auto 40px; }
   .orders__item-wrapper-for-3items::after {
     content: "";
     display: table;
@@ -454,7 +457,6 @@ h1, h2 {
     margin-bottom: 60px; }
 
 .orders__item {
-  float: left;
   width: 230px;
   margin-right: 20px;
   padding: 8px;
@@ -536,7 +538,8 @@ h1, h2 {
   width: 100%;
   margin: 0 auto;
   padding: 50px 0;
-  background-image: url("../img/bg-footer.png"); }
+  background-image: url("../img/bg-footer.png");
+  background-repeat: repeat no-repeat; }
 
 .form-signup {
   width: 1024px;
@@ -623,8 +626,7 @@ h1, h2 {
   .page-main {
     width: 768px; }
   .orders__item-wrapper-for-3items {
-    margin: 0 auto 20px;
-    width: 620px; }
+    margin: 0 auto 20px; }
   .orders__item {
     width: 200px;
     margin-right: 10px;
@@ -648,7 +650,6 @@ h1, h2 {
     width: 320px; }
   .orders__item-wrapper-for-3items {
     float: none;
-    width: 300px;
     margin: 0 auto; }
   .orders__item {
     width: 300px;
