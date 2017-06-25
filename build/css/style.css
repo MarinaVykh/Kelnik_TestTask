@@ -455,7 +455,7 @@ header, nav, main, section, article, aside, footer {
 
 .orders__item {
   display: inline-block;
-  max-width: 240px;
+  max-width: 235px;
   min-height: 470px;
   margin: 21px 8px;
   padding: 8px;
@@ -489,7 +489,7 @@ header, nav, main, section, article, aside, footer {
   background-position: center; }
 
 .orders__item-picture {
-  margin-bottom: 10px; }
+  margin: 0 auto 10px auto; }
 
 .orders__item-name {
   padding: 8px 8px 0 8px;
