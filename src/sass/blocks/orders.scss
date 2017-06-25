@@ -7,13 +7,13 @@
 
 .orders__item {
   display: inline-block;
-  width: 220px;
-  //min-height: 430px;
+  max-width: 240px;
+  min-height: 470px;
   margin: 21px 8px;
   padding: 8px;
   text-align: left;
   vertical-align: top;
-  //line-height: 1.5;
+  line-height: 1.5;
   background-color: #fff;
   border: 4px solid transparent;
   border-radius: 10px;
@@ -60,7 +60,7 @@
 }
 
 .orders__item-info {
-  min-height: 135px;
+  min-height: 155px;
   padding: 0 8px 8px 8px;
   font-size: 13px;
   color: #2a2a2a;

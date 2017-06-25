@@ -20,3 +20,17 @@
   margin-left: 78px;
   font-size: 28px;
 }
+
+@media ($tablet-width) {
+
+  .button--scroll-up {
+    padding-top: 0;
+  }
+}
+
+@media ($mobile-width) {
+
+  .button--scroll-up {
+    padding-top: 20px;
+  }
+}

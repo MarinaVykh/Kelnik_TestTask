@@ -371,7 +371,7 @@ th {
 @font-face {
   font-family: 'Prototypster';
   src: url("../fonts/PrototypsterMedium.eot");
-  src: url("../fonts/PrototypsterMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/PrototypsterMedium.woff") format("woff"), url("../fonts/PrototypsterMedium.ttf") format("truetype"), url("../fonts/PrototypsterMedium.svg#svgPrototypsterMedium") format("svg");
+  src: url("../fonts/PrototypsterMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/PrototypsterMedium.woff") format("woff"), url("../fonts/PrototypsterMedium.ttf") format("truetype"), url("../fonts/PrototypsterMedium.svg#PrototypsterMedium") format("svg");
   font-weight: 500;
   font-style: normal; }
 
@@ -455,11 +455,13 @@ header, nav, main, section, article, aside, footer {
 
 .orders__item {
   display: inline-block;
-  width: 220px;
+  max-width: 240px;
+  min-height: 470px;
   margin: 21px 8px;
   padding: 8px;
   text-align: left;
   vertical-align: top;
+  line-height: 1.5;
   background-color: #fff;
   border: 4px solid transparent;
   border-radius: 10px;
@@ -496,7 +498,7 @@ header, nav, main, section, article, aside, footer {
   color: #2a2a2a; }
 
 .orders__item-info {
-  min-height: 135px;
+  min-height: 155px;
   padding: 0 8px 8px 8px;
   font-size: 13px;
   color: #2a2a2a; }
@@ -638,6 +640,8 @@ header, nav, main, section, article, aside, footer {
     font-size: 20px; }
   .orders__item-button-status {
     font-size: 20px; }
+  .button--scroll-up {
+    padding-top: 0; }
   .page-footer {
     padding: 25px 0; }
   .form-signup {
@@ -663,6 +667,8 @@ header, nav, main, section, article, aside, footer {
     border-radius: 10px; }
   .orders__item-button-status {
     padding: 0; }
+  .button--scroll-up {
+    padding-top: 20px; }
   .page-footer {
     padding: 25px 5px; }
   .form-signup {

@@ -20,17 +20,16 @@
 
 //реализация направления сортировки на jQuery (для ie8, ie9)
 function clickSortingItem() {
-  $('.page-header__sorting-item').on('click', function (e) {
+  $('.page-header__sorting-item').on("click", function (e) {
     if ($(this).hasClass("page-header__sorting-item--bottom")) {
       $(this).removeClass("page-header__sorting-item--bottom");
-      $(this).addClass('page-header__sorting-item--top');
+      $(this).addClass("page-header__sorting-item--top");
     }
     else {
-      $(this).addClass('page-header__sorting-item--bottom');
-      $(this).removeClass('page-header__sorting-item--top');
+      $(this).addClass("page-header__sorting-item--bottom");
+      $(this).removeClass("page-header__sorting-item--top");
     }
-
-  })
+  });
 }
 
 clickSortingItem($);
@@ -38,11 +37,11 @@ clickSortingItem($);
 
 //реализация скролла вверх на jQuery
 function scrollTop($) {
-  var buttonScrollUp = $('.button--scroll-up'),
+  var buttonScrollUp = $(".button--scroll-up"),
     body = $('body, html')
 
   if (buttonScrollUp.length > 0) {
-    buttonScrollUp.on('click', function (e) {
+    buttonScrollUp.on("click", function (e) {
       eventScrollTop();
       e.preventDefault();
     });
