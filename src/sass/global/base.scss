@@ -26,3 +26,7 @@ h1, h2 {
   font-family: "Prototypster";
   text-transform: uppercase;
 }
+
+header, nav, main, section, article, aside, footer {
+  display: block;
+}

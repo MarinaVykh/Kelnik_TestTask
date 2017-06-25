@@ -50,12 +50,12 @@
 
 .form-signup__checkbox-name {
   display: block;
-  width: 165px;
+  width: 270px;
   position: relative;
   font-size: 18px;
   cursor: pointer;
 
-  &::before {
+  &:before {
     content: "";
     position: absolute;
     top: -5px;
@@ -70,7 +70,7 @@
     transition: 0.3s ease-out;
   }
 
-  &::after {
+  &:after {
     content: "";
     position: absolute;
     top: 1px;
@@ -87,7 +87,7 @@
   }
 }
 
-.form-signup__checkbox-input:checked + .form-signup__checkbox-name::after {
+.form-signup__checkbox-input:checked + .form-signup__checkbox-name:after {
   opacity: 1;
 }
 
@@ -95,7 +95,11 @@
 
   .form-signup {
     width: 768px;
-    padding-left: 0;
+    padding-left: 75px;
+  }
+
+  .form-signup__checkbox-name {
+    width: 165px;
   }
 }
 

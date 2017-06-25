@@ -1,22 +1,40 @@
 //реализация направления сортировки на js
-function clickSortingItem() {
-  var sortingItems = document.getElementsByClassName('page-header__sorting-item');
+// function clickSortingItem() {
+//   var sortingItems = document.querySelectorAll('.page-header__sorting-item');
+//
+//   for (var i = 0; i < sortingItems.length; i++) {
+//     sortingItems[i].onclick = function () {
+//       if (this.classList.contains('page-header__sorting-item--bottom')) {
+//         this.classList.remove('page-header__sorting-item--bottom');
+//         this.classList.add('page-header__sorting-item--top');
+//       }
+//       else {
+//         this.classList.add('page-header__sorting-item--bottom');
+//         this.classList.remove('page-header__sorting-item--top');
+//       }
+//     }
+//   }
+// }
+//
+// clickSortingItem();
 
-  for (var i = 0; i < sortingItems.length; i++) {
-    sortingItems[i].addEventListener('click', function () {
-      if (this.classList.contains('page-header__sorting-item--bottom')) {
-        this.classList.remove('page-header__sorting-item--bottom');
-        this.classList.add('page-header__sorting-item--top');
-      }
-      else {
-        this.classList.add('page-header__sorting-item--bottom');
-        this.classList.remove('page-header__sorting-item--top');
-      }
-    })
-  }
+//реализация направления сортировки на jQuery (для ie8, ie9)
+function clickSortingItem() {
+  $('.page-header__sorting-item').on('click', function (e) {
+    if ($(this).hasClass("page-header__sorting-item--bottom")) {
+      $(this).removeClass("page-header__sorting-item--bottom");
+      $(this).addClass('page-header__sorting-item--top');
+    }
+    else {
+      $(this).addClass('page-header__sorting-item--bottom');
+      $(this).removeClass('page-header__sorting-item--top');
+    }
+
+  })
 }
 
-clickSortingItem();
+clickSortingItem($);
+
 
 //реализация скролла вверх на jQuery
 function scrollTop($) {

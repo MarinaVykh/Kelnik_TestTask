@@ -38,7 +38,7 @@ gulp.task('sass', function () {
     .pipe(sourcemaps.init())                                // инициируем карту кода
     .pipe(sass())                                           // компилируем SASS
     .pipe(postcss([                                         // делаем постпроцессинг
-      autoprefixer({browsers: ['last 4 version']}),     // автопрефиксирование
+      autoprefixer({browsers: ['last 4 version', 'ie >= 7']}), // автопрефиксирование
       mqpacker({sort: true}),                           // объединение медиавыражений
     ]))
     .pipe(sourcemaps.write('/'))                            // записываем карту кода как отдельный файл (путь из константы)
