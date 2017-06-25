@@ -3,20 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-
-
-
   <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
 
-  <!--&lt;!&ndash;[if lt IE 9]>-->
-  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>-->
+  <!--<script type="text/javascript" src="[JS library]"></script>-->
+  <!--&lt;!&ndash;[if (gte IE 6)&(lte IE 8)]>-->
+  <!--<script type="text/javascript" src="selectivizr.js"></script>-->
+  <!--<noscript><link rel="stylesheet" href="[fallback css]" /></noscript>-->
   <!--<![endif]&ndash;&gt;-->
-
-  <!--<script type="text/javascript" src="selectivizr-min.js"></script>-->
-  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/mootools/1.4.0/mootools-yui-compressed.js"></script>-->
-
-
-
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TestTask_MVykhristiuk</title>
@@ -24,9 +17,6 @@
 </head>
 
 <body>
-
-
-
 <!--[if lt IE 9]>
 <script>
   document.createElement('header');
@@ -39,103 +29,97 @@
 </script>
 <![endif]-->
 
-
-
 <header class="page-header">
   <div class="page-header__title-wrapper">
     <h1 class="page-header__title">Мои заказы</h1>
   </div>
 
-  <div class="page-header__sorting">Сортировать: <span class="page-header__sorting-item">по дате</span> | <span class="page-header__sorting-item">по готовности</span></div>
+  <div class="page-header__sorting">Сортировать: <span class="page-header__sorting-item">по дате</span> | <span
+    class="page-header__sorting-item">по готовности</span></div>
 </header>
 
 <main class="page-main">
   <div class="orders">
-    <div class="orders__item-wrapper-for-3items">
-      <div class="orders__item">
-        <img class="orders__item-picture" src="img/order-item.jpg" width="206" height="180" alt="Название заказа">
-        <h2 class="orders__item-name">Название заказа</h2>
-        <div class="orders__item-info">
-          <div class="orders__item-info-status">Статус: в печати</div>
-          <div class="orders__item-info-data">Загружен: 11.04.13</div>
-          <div class="orders__item-info-description">Фотополимер покрашенный</div>
-          <div class="orders__item-info-quantity">Количество экземпляров: 1</div>
-        </div>
-        <div class="orders__item-button-status">Выполнен на 60%</div>
+    <div class="orders__item">
+      <img class="orders__item-picture" src="img/order-item.jpg" width="206" height="180" alt="Название заказа">
+      <h2 class="orders__item-name">Название заказа</h2>
+      <div class="orders__item-info">
+        <div class="orders__item-info-status">Статус: в печати</div>
+        <div class="orders__item-info-data">Загружен: 11.04.13</div>
+        <div class="orders__item-info-description">Фотополимер покрашенный</div>
+        <div class="orders__item-info-quantity">Количество экземпляров: 1</div>
       </div>
-
-      <div class="orders__item">
-        <img class="orders__item-picture" src="img/order-item.jpg" width="206" height="180" alt="Название заказа">
-        <h2 class="orders__item-name">Название заказа</h2>
-        <div class="orders__item-info">
-          <div class="orders__item-info-status">Статус: отправлен</div>
-          <div class="orders__item-info-data">Загружен: 11.04.13</div>
-          <div class="orders__item-info-description">Фотополимер покрашенный</div>
-          <div class="orders__item-info-quantity">Количество экземпляров: 1</div>
-          <div class="orders__item-info-color">Цвет: черный</div>
-          <div class="orders__item-info-size">160 x 70</div>
-        </div>
-        <div class="orders__item-button-status">+ Добавить в магазин</div>
-      </div>
-
-      <div class="orders__item  orders__item--special">
-        <img class="orders__item-picture" src="img/order-item.jpg" width="206" height="180" alt="Название заказа">
-        <h2 class="orders__item-name">Название заказа</h2>
-        <div class="orders__item-info">
-          <div class="orders__item-info-status">Статус: в Моем магазине</div>
-          <div class="orders__item-info-data">Загружен: 11.04.13</div>
-          <div class="orders__item-info-description">Фотополимер покрашенный</div>
-          <div class="orders__item-info-quantity">Количество экземпляров: 1</div>
-        </div>
-        <div class="orders__item-button-status">Выполнен на 60%</div>
-      </div>
+      <div class="orders__item-button-status">Выполнен на 60%</div>
     </div>
 
-    <div class="orders__item-wrapper-for-3items">
-      <div class="orders__item">
-        <img class="orders__item-picture" src="img/order-item.jpg" width="206" height="180" alt="Название заказа">
-        <h2 class="orders__item-name">Название заказа</h2>
-        <div class="orders__item-info">
-          <div class="orders__item-info-status">Статус: в печати</div>
-          <div class="orders__item-info-data">Загружен: 11.04.13</div>
-          <div class="orders__item-info-description">Фотополимер покрашенный</div>
-          <div class="orders__item-info-quantity">Количество экземпляров: 1</div>
-          <div class="orders__item-info-description">Фотополимер покрашенный</div>
-          <div class="orders__item-info-quantity">Количество экземпляров: 1</div>
-        </div>
-        <div class="orders__item-button-status">Выполнен на 60%</div>
+    <div class="orders__item">
+      <img class="orders__item-picture" src="img/order-item.jpg" width="206" height="180" alt="Название заказа">
+      <h2 class="orders__item-name">Название заказа</h2>
+      <div class="orders__item-info">
+        <div class="orders__item-info-status">Статус: отправлен</div>
+        <div class="orders__item-info-data">Загружен: 11.04.13</div>
+        <div class="orders__item-info-description">Фотополимер покрашенный</div>
+        <div class="orders__item-info-quantity">Количество экземпляров: 1</div>
+        <div class="orders__item-info-color">Цвет: черный</div>
+        <div class="orders__item-info-size">Размер: 160 x 70</div>
       </div>
+      <div class="orders__item-button-status  orders__item-button-status--add">+ Добавить в магазин</div>
+    </div>
 
-      <div class="orders__item">
-        <img class="orders__item-picture" src="img/order-item.jpg" width="206" height="180" alt="Название заказа">
-        <h2 class="orders__item-name">Название заказа</h2>
-        <div class="orders__item-info">
-          <div class="orders__item-info-status">Статус: в печати</div>
-          <div class="orders__item-info-data">Загружен: 11.04.13</div>
-          <div class="orders__item-info-description">Фотополимер покрашенный</div>
-          <div class="orders__item-info-quantity">Количество экземпляров: 1</div>
-        </div>
-        <div class="orders__item-button-status">Выполнен на 60%</div>
+    <div class="orders__item  orders__item--special">
+      <img class="orders__item-picture" src="img/order-item.jpg" width="206" height="180" alt="Название заказа">
+      <h2 class="orders__item-name">Название заказа</h2>
+      <div class="orders__item-info">
+        <div class="orders__item-info-status">Статус: в Моем магазине</div>
+        <div class="orders__item-info-data">Загружен: 11.04.13</div>
+        <div class="orders__item-info-description">Фотополимер покрашенный</div>
+        <div class="orders__item-info-quantity">Количество экземпляров: 1</div>
       </div>
+      <div class="orders__item-button-status">Выполнен на 60%</div>
+    </div>
 
-      <div class="orders__item">
-        <img class="orders__item-picture" src="img/order-item.jpg" width="206" height="180" alt="Название заказа">
-        <h2 class="orders__item-name">Название заказа</h2>
-        <div class="orders__item-info">
-          <div class="orders__item-info-status">Статус: отправлен</div>
-          <div class="orders__item-info-data">Загружен: 11.04.13</div>
-          <div class="orders__item-info-description">Фотополимер покрашенный</div>
-          <div class="orders__item-info-quantity">Количество экземпляров: 1</div>
-          <div class="orders__item-info-color">Цвет: черный</div>
-          <div class="orders__item-info-size">160 x 70</div>
-        </div>
-        <div class="orders__item-button-status">Выполнен на 60%</div>
+    <div class="orders__item">
+      <img class="orders__item-picture" src="img/order-item.jpg" width="206" height="180" alt="Название заказа">
+      <h2 class="orders__item-name">Название заказа</h2>
+      <div class="orders__item-info">
+        <div class="orders__item-info-status">Статус: в печати</div>
+        <div class="orders__item-info-data">Загружен: 11.04.13</div>
+        <div class="orders__item-info-description">Фотополимер покрашенный</div>
+        <div class="orders__item-info-quantity">Количество экземпляров: 1</div>
+        <div class="orders__item-info-description">Фотополимер покрашенный</div>
+        <div class="orders__item-info-quantity">Количество экземпляров: 1</div>
       </div>
+      <div class="orders__item-button-status">Выполнен на 60%</div>
+    </div>
+
+    <div class="orders__item">
+      <img class="orders__item-picture" src="img/order-item.jpg" width="206" height="180" alt="Название заказа">
+      <h2 class="orders__item-name">Название заказа</h2>
+      <div class="orders__item-info">
+        <div class="orders__item-info-status">Статус: в печати</div>
+        <div class="orders__item-info-data">Загружен: 11.04.13</div>
+        <div class="orders__item-info-description">Фотополимер покрашенный</div>
+        <div class="orders__item-info-quantity">Количество экземпляров: 1</div>
+      </div>
+      <div class="orders__item-button-status">Выполнен на 60%</div>
+    </div>
+
+    <div class="orders__item">
+      <img class="orders__item-picture" src="img/order-item.jpg" width="206" height="180" alt="Название заказа">
+      <h2 class="orders__item-name">Название заказа</h2>
+      <div class="orders__item-info">
+        <div class="orders__item-info-status">Статус: отправлен</div>
+        <div class="orders__item-info-data">Загружен: 11.04.13</div>
+        <div class="orders__item-info-description">Фотополимер покрашенный</div>
+        <div class="orders__item-info-quantity">Количество экземпляров: 1</div>
+        <div class="orders__item-info-color">Цвет: черный</div>
+        <div class="orders__item-info-size">Размер: 160 x 70</div>
+      </div>
+      <div class="orders__item-button-status">Выполнен на 60%</div>
     </div>
   </div>
 
   <div class="page-main__button-scroll-up  button  button--scroll-up">Наверх</div>
-
 </main>
 
 <footer class="page-footer">
@@ -143,7 +127,8 @@
 
     <fieldset class="form-signup__email">
       <label class="form-signup__email-name" for="email">Ваш email:</label>
-      <input class="form-signup__email-input" type="email" name="email" id="email" placeholder="dedal79@gmail.com" required>
+      <input class="form-signup__email-input" type="email" name="email" id="email" placeholder="dedal79@gmail.com"
+             required>
       <span class="form-signup__email-error">Введите, пожалуйста, корректный e-mail адрес</span>
     </fieldset>
 
@@ -153,11 +138,10 @@
     </fieldset>
 
     <button class="button  button--signup" type="submit">Зарегистрироваться</button>
-
   </form>
 </footer>
 
-<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/main.min.js"></script>
 <script src="js/picturefill.min.js"></script>
 
